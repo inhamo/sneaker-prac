@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sneaker Cleaning Co.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #121826;
+            color: white;
+            padding: 20px;
+        }
+
+        header img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        header a {
+            color: white;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        header .login-button {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        header .login-button:hover {
+            background-color: #df362c;
+            text-decoration: none;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .booking-form {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-group button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="" alt="Logo">
+        <a href="shoecleaning.html">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+        <a href="#" class="login-button">Login</a>
+    </header>
+
+    <h1>Shoe Cleaning Booking</h1>
+
+    <div class="booking-form">
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="shoe-type">Shoe Type:</label>
+                <select id="shoe-type" name="shoe-type">
+                    <option value="leather">Leather</option>
+                    <option value="canvas">Canvas</option>
+                    <option value="suede">Suede</option>
+                    <option value="nedbuck">Nedbuck</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Book Now</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
